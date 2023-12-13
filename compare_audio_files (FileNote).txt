@@ -1,0 +1,23 @@
+Audio File Comparison Script
+----------------------------
+
+This script is designed to compare two audio files to identify differences in their technical data and metadata.
+
+Requirements:
+- You need to have ffprobe installed (usually comes with FFmpeg).
+- Mutagen library should be installed in Python (use 'pip install mutagen').
+
+How to Use:
+1. Place the script in the same directory as the audio files or provide the full path to the files.
+2. Run the script from the command line with two audio files as arguments.
+
+Example Command:
+python compare_audio_files.py audiofile1.mp3 audiofile2.mp3
+
+The script will output differences in the following areas:
+- Streams: Codec, bit rate, sample rate, etc.
+- Format: Overall file format details.
+- Packets: Detailed frame-by-frame analysis.
+- Metadata: ID3 tags, album information, etc.
+
+Use this script to diagnose issues, identify corruption, or confirm file integrity between two audio files.
